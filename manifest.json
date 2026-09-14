@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Thumbnail Desaturator",
+    "version": "1.0",
+    "description": "Reduce oversaturated colors in Youtube thumbnails.",
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "css": ["content.css"]
+        }
+    ]
+}
