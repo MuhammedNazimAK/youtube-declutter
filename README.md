@@ -1,8 +1,7 @@
-# YouTube Thumbnail Desaturator
+# Youtube Declutter
 
-A tiny browser extension that reduces the oversaturated colors in YouTube
-thumbnails, with an adjustable saturation level set from the toolbar popup.
-No tracking, no external requests - just local storage to save your saturation preference.
+A tiny browser extension with small quality-of-life tweaks for YouTube - adjustable thumbnail saturation, sidebar declutter, and more to come.
+No tracking, no external requests - just local storage to save your preferences.
 
 <p align="center">
   <img src="./images/before-after.png" alt="Before and After Saturation Comparison" width="100%">
@@ -10,9 +9,7 @@ No tracking, no external requests - just local storage to save your saturation p
 
 ## Why
 
-Many YouTube thumbnails are edited with extreme color saturation to grab
-attention. This extension tones them down to something closer to natural,
-without blocking or hiding any content.
+YouTube's default UI has oversaturated thumbnails and sidebar clutter promoting other Google/YouTube services. This extension tones things down and lets you hide what you don't need - without blocking or removing any actual content.
 
 ## Install (manual, unpacked)
 
@@ -22,18 +19,20 @@ This isn't on the Chrome Web Store yet - install it manually:
 2. Open `chrome://extensions` (or `brave://extensions` on Brave)
 3. Enable **Developer mode** (top right)
 4. Click **Load unpacked** and select this folder
-5. Done — thumbnails on YouTube will now render less saturated
+5. Done - open the extension icon to configure your preferences
 
-## How it works
+## Features
+
+### Thumbnail Desaturation
 
 Click the extension icon to open a popup with a slider. Your chosen
 saturation level is saved (`chrome.storage.local`) and applied instantly
 to YouTube thumbnails via a small injected stylesheet - no page reload
 needed, and it stays in sync across any open YouTube tabs.
 
-## Customizing the saturation level
+### UI Declutter Toggle
 
-Click the extension icon and drag the slider. Changes apply live.
+Toggle a switch to instantly hide the "More from YouTube" sidebar section (YouTube Premium, YouTube Music, YouTube Kids links). Applied via injected CSS (`display: none !important`), so it vanishes without a page refresh. Your preference is saved and synced across all open YouTube tabs.
 
 ## Compatibility
 

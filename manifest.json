@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Thumbnail Desaturator",
+  "name": "Youtube Declutter",
   "version": "1.0",
-  "description": "Reduce oversaturated colors in Youtube thumbnails.",
+  "description": "Small quality-of-life tweaks for YouTube: thumbnail desaturation, sidebar declutter, and more.",
   "permissions": ["storage"], 
   "content_scripts": [
     {
