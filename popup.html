@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            width: 220px;
+            padding: 12px;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+        #value {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <label>Saturation: <span id="value">0.6</span></label>
+    <input type="range" id="slider" min="0" max="1" step="0.05" value="0.6" />
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 # YouTube Thumbnail Desaturator
 
 A tiny browser extension that reduces the oversaturated colors in YouTube
-thumbnails, using a single CSS filter. No tracking, no permissions beyond
-YouTube, no bloat.
+thumbnails, with an adjustable saturation level set from the toolbar popup.
+No tracking, no external requests - just local storage to save your saturation preference.
 
 <p align="center">
   <img src="./images/before-after.png" alt="Before and After Saturation Comparison" width="100%">
@@ -26,18 +26,14 @@ This isn't on the Chrome Web Store yet - install it manually:
 
 ## How it works
 
-A single CSS rule targets YouTube's thumbnail image elements and applies
-`filter: saturate(0.6)`. That's the entire extension.
+Click the extension icon to open a popup with a slider. Your chosen
+saturation level is saved (`chrome.storage.local`) and applied instantly
+to YouTube thumbnails via a small injected stylesheet - no page reload
+needed, and it stays in sync across any open YouTube tabs.
 
 ## Customizing the saturation level
 
-Edit the value in `content.css`:
-
-```css
-img.ytCoreImageContentModeScaleAspectFill {
-  filter: saturate(0.6); /* change 0.6 to 0–1 range */
-}
-```
+Click the extension icon and drag the slider. Changes apply live.
 
 ## Compatibility
 
